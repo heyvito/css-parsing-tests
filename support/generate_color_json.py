@@ -481,6 +481,6 @@ if args.file:
     print(FUNCTIONS[args.file]())
 else:
     for name, function in FUNCTIONS.items():
-        filename = f'color_{name}.json'
+        filename = f'../color_{name}.json'
         print(f'Generating {filename}')
         Path(filename).write_text(function())

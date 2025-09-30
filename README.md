@@ -60,9 +60,11 @@ The Unicode input is represented by a JSON string, the output as a
 
 ### `declaration_list.json`
 
-Tests [_Parse a list of declarations_](https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-declarations>).
+Tests [_Parse a block’s contents_](https://drafts.csswg.org/css-syntax-3/#parse-block-contents>).
 The Unicode input is represented by a JSON string,
 the output as an array of `declarations` and `at-rules`.
+
+> TODO: Merge `declaration_list.json` and `blocks_contents.json` into `blocks_contents.json`
 
 ### `blocks_contents.json`
 

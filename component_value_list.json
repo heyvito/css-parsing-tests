@@ -102,7 +102,7 @@
 	"#", ".", ["ident", "red"], " ",
 	["hash", "rêd", "id"], " ",
 	["hash", "êrd", "id"], " ",
-	["hash", ".red\uFFFD", "id"]
+	["hash", ".red\uFFFD", "unrestricted"]
 ],
 
 "p[example=\"\\\nfoo(int x) {\\\n   this.x = x;\\\n}\\\n\"]", [
@@ -410,16 +410,16 @@
 ],
 
 "~=|=^=$=*=||<!------> |/**/| ~/**/=", [
-	"~=", "|=", "^=", "$=", "*=", "||", "<!--", ["ident", "----"], ">",
+	"~", "=", "|", "=", "^", "=", "$", "=", "*", "=", "|", "|", "<!--", ["ident", "----"], ">",
 	" ", "|", "|", " ", "~", "="
 ],
 
 "a:not([href^=http\\:],  [href ^=\t'https\\:'\n]) { color: rgba(0%, 100%, 50%); }", [
 	["ident", "a"], ":", ["function", "not",
 		["[]",
-			["ident", "href"], "^=", ["ident", "http:"]
+			["ident", "href"], "^","=", ["ident", "http:"]
 		], ",", " ", ["[]",
-			["ident", "href"], " ", "^=", " ", ["string", "https:"], " "
+			["ident", "href"], " ", "^", "=", " ", ["string", "https:"], " "
 		]
 	], " ", ["{}",
 		" ", ["ident", "color"], ":", " ", ["function", "rgba",
@@ -433,8 +433,8 @@
 "@media print { (foo]{bar) }baz", [
 	["at-keyword", "media"], " ", ["ident", "print"], " ", ["{}",
 		" ", ["()",
-			["ident", "foo"], ["error", "]"], ["{}",
-				["ident", "bar"], ["error", ")"], " "
+			["ident", "foo"], "]", ["{}",
+				["ident", "bar"], ")", " "
 			], ["ident", "baz"]
 		]
 	]

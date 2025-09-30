@@ -37,8 +37,5 @@
 "@ media screen { div{;}} a:b;; @media print{div{", [
     ["error", "invalid"],
     ["at-rule", "media", [" ", ["ident", "print"]], [["ident", "div"], ["{}"]]]
-],
-
-"", []
-
+]
 ]

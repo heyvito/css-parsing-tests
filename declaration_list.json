@@ -35,7 +35,14 @@
 ],
 
 "@ media screen { div{;}} a:b;; @media print{div{", [
-    ["error", "invalid"],
-    ["at-rule", "media", [" ", ["ident", "print"]], [["ident", "div"], ["{}"]]]
+    ["qualified rule",
+        ["@", " ", "media", " ", "screen", " "],
+        [["qualified rule", ["div"], []]]
+    ],
+    ["declaration", "a", [["ident", "b"]], false],
+    ["at-rule", "media",
+        [" ", ["ident", "print"]],
+        [["qualified rule", ["div"], []]]
+    ]
 ]
 ]

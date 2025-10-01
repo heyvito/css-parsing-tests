@@ -60,7 +60,7 @@ The Unicode input is represented by a JSON string, the output as a
 
 ### `declaration_list.json`
 
-Tests [_Parse a block’s contents_](https://drafts.csswg.org/css-syntax-3/#parse-block-contents>).
+Tests [_Parse a block’s contents_](https://drafts.csswg.org/css-syntax-3/#parse-block-contents).
 The Unicode input is represented by a JSON string,
 the output as an array of `declarations` and `at-rules`.
 
@@ -68,13 +68,13 @@ the output as an array of `declarations` and `at-rules`.
 
 ### `blocks_contents.json`
 
-Tests [_Parse a block’s contents_](http://dev.w3.org/csswg/css-syntax-3/#parse-block-contents>).
+Tests [_Parse a block’s contents_](http://dev.w3.org/csswg/css-syntax-3/#parse-block-contents).
 The Unicode input is represented by a JSON string,
 the output as an array of `declarations`, `at-rules` and `qualified rules`.
 
 ### `one_declaration.json`
 
-Tests [_Parse a declaration_](https://drafts.csswg.org/css-syntax-3/#parse-a-declaration>).
+Tests [_Parse a declaration_](https://drafts.csswg.org/css-syntax-3/#parse-a-declaration).
 The Unicode input is represented by a JSON string, the output as a
 `declaration`.
 
@@ -86,7 +86,7 @@ The Unicode input is represented by a JSON string, the output as a
 
 ### `rule_list.json`
 
-Tests [_Parse a list of rules_](https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-rules>).
+Tests [_Parse a stylesheet's contents_](https://drafts.csswg.org/css-syntax/#parse-stylesheet-contents).
 The Unicode input is represented by a JSON string, the output as a list of
 `qualified rules` or `at-rules`.
 
@@ -125,7 +125,7 @@ level 4.
 
 ### `An+B.json`
 
-Tests the [_An+B_](https://drafts.csswg.org/css-syntax-3/#the-anb-type>) syntax
+Tests the [_An+B_](https://drafts.csswg.org/css-syntax-3/#the-anb-type) syntax
 defined in CSS Syntax Level 3.
 This [differs](https://drafts.csswg.org/css-syntax-3/#changes) from the
 [nth grammar rule](https://www.w3.org/TR/selectors-3/#nth-child-pseudo) in
@@ -222,30 +222,6 @@ and the unit as a string.
 
 Array of length 3: the string `"unicode-range"`,
 followed by the *start* and *end* integers as two numbers.
-
-#### `<include-match>`
-
-The string `"~="`.
-
-#### `<dash-match>`
-
-The string `"|="`.
-
-#### `<prefix-match>`
-
-The string `"^="`.
-
-#### `<suffix-match>`
-
-The string `"$="`.
-
-#### `<substring-match>`
-
-The string `"*="`.
-
-#### `<column>`
-
-The string `"||"`.
 
 #### `<whitespace>`
 
